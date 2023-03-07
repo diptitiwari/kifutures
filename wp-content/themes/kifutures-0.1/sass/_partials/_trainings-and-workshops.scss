@@ -1,0 +1,130 @@
+// Home Page Scss
+.page-template-trainings-and-workshops.kifutures {
+  // Hero Section 1
+  .hero-section.hero-container {
+    padding: 90px 15px;
+    text-align: center;
+    .title {
+      @include title_style_1(#0e0e0e);
+    }
+    .subtitle {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
+
+  // Events Data
+  .events-section {
+    .section-title {
+      @include title_style_1(#252733);
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .events-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      .event-arrow {
+        max-width: 25px;
+        max-height: 50px;
+        display: flex;
+      }
+    }
+    #events-data {
+      padding: 0 72px;
+      .events {
+        &-month {
+          text-align: center;
+        }
+        .event {
+          &-title {
+            text-align: left;
+          }
+          &-cat-data {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 26px 0;
+            .color {
+              width: 34px;
+              height: 34px;
+              border-radius: 100%;
+              margin-right: 12px;
+            }
+            .name {
+              font-family: $font-secondary;
+              font-weight: $Medium;
+              font-size: $fs-16;
+              line-height: 20px;
+              color: #373737;
+            }
+          }
+          &-description {
+            .text {
+              font-weight: $Regular;
+            }
+          }
+          &-organizer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 25px 0 0;
+            .organizer-data {
+              display: flex;
+              flex-wrap: wrap;
+              &:nth-child(n+3){
+                margin-top: 20px;
+              }
+              .img {
+                margin-right: 20px;
+                img {
+                  max-height: 140px;
+                }
+              }
+              .data {
+                .bio {
+                  font-family: "Lora";
+                  margin: 15px 0 8px;
+                  width: auto;
+                  max-width: 250px;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+                .read-bio {
+                  color: $blue;
+                }
+              }
+            }
+          }
+          & .descriptionAndHost.d-flex {
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            .event-organizer {
+              margin: 0 0 0 20px;
+              min-width: 420px;
+            }
+          }
+          &-bottom-line {
+            max-width: 80%;
+            margin: 35px auto;
+            border-color: $border-color;
+          }
+        }
+      }
+      .events:last-child {
+        .event-bottom-line {
+          display: none;
+        }
+      }
+    }
+    .section-bottom-line {
+      border: 1px solid #2a2ca8;
+      margin: 114px 0;
+    }
+  }
+}

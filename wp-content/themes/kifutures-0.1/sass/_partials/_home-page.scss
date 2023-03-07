@@ -1,0 +1,253 @@
+// Home Page Scss
+.page-template-home-page.kifutures {
+  // Section 1 ( Hero )
+  .hero-section {
+    padding: 250px 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 69%;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.85) 43.29%,
+        rgba(0, 0, 0, 0.580147) 77.6%,
+        rgba(0, 0, 0, 0) 88.02%,
+        rgba(0, 0, 0, 0) 99.98%
+      );
+      // transform: matrix(0, 1, 1, 0, 0, 0);
+    }
+    .site-container {
+      position: relative;
+      z-index: 1;
+      .contact-part {
+        max-width: 570px;
+        .title {
+          @include title_style_1(#e6e6e6);
+          max-width: 570px;
+        }
+        .text {
+          @include text_style_2(#e6e6e6);
+        }
+        .btn {
+          text-align: center;
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+
+  // Section 2 ( Program )
+  .section2 {
+    .contact-part {
+      .title {
+        @include title_style_4($black, #fcb615, -5px, 80%);
+      }
+    }
+  }
+
+  // Section 3 ( Work )
+  .section3 {
+    .contact-part {
+      .title {
+        @include title_style_4($black, #00add9, -5px, 80%);
+      }
+    }
+  }
+
+  // Section 4 ( Text )
+  .plaintext-section {
+    padding: 100px 0;
+    text-align: center;
+    // background-color: #2a2ca8;
+    .text {
+      > * {
+        @include title_style_2(#fdfdfd);
+      }
+    }
+  }
+
+  // Section 5 ( Futures )
+  .section5 {
+    .contact-part {
+      .title {
+        @include title_style_4($black, #3eaf49, -5px, 80%);
+      }
+    }
+  }
+
+  // Section 6 ( Expect )
+  .section6 {
+    padding: 50px 0;
+    .site-container {
+      max-width: 1200px;
+      text-align: center;
+      .title {
+        @include title_style_1($black);
+        font-weight: $Bold;
+        margin-bottom: 40px;
+      }
+      .expect-grid {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 2fr;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          background-image: url("data:image/svg+xml,%3Csvg width='648' height='399' viewBox='0 0 648 399' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.11505 19.7325C0.653774 20.8828 -0.378573 23.8756 0.809238 26.417L20.1658 67.8319C21.3536 70.3733 24.3117 71.501 26.773 70.3507C29.2343 69.2003 30.2666 66.2075 29.0788 63.6661L11.873 26.8529L47.5253 10.1897C49.9866 9.03936 51.0189 6.04658 49.8311 3.50516C48.6433 0.963737 45.6852 -0.163948 43.2239 0.986406L3.11505 19.7325ZM187.642 88.5096L6.89623 19.6075L3.63532 29.0608L184.381 97.963L187.642 88.5096Z' fill='%232A2CA8' fill-opacity='0.6'/%3E%3Cpath d='M647.305 43.6557C648.669 41.2134 647.846 38.1565 645.467 36.8278L606.696 15.1757C604.317 13.847 601.283 14.7498 599.919 17.1921C598.555 19.6344 599.378 22.6914 601.757 24.02L636.219 43.2663L616.462 78.6438C615.098 81.0861 615.921 84.1431 618.3 85.4718C620.68 86.8004 623.714 85.8977 625.078 83.4554L647.305 43.6557ZM459.3 101.117L551.798 73.5976L549.199 63.9414L456.7 91.461L459.3 101.117ZM551.798 73.5976L644.297 46.0781L641.697 36.4219L549.199 63.9414L551.798 73.5976Z' fill='%232A2CA8' fill-opacity='0.6'/%3E%3Cpath d='M23.3068 282.685C22.7594 285.456 24.4604 288.126 27.1062 288.649L70.2213 297.167C72.867 297.69 75.4556 295.867 76.0031 293.096C76.5506 290.325 74.8495 287.655 72.2038 287.133L33.8792 279.561L41.8093 239.423C42.3567 236.653 40.6557 233.982 38.0099 233.46C35.3642 232.937 32.7756 234.76 32.2281 237.53L23.3068 282.685ZM185.157 166.945L25.4109 279.415L30.7839 287.848L190.53 175.379L185.157 166.945Z' fill='%232A2CA8' fill-opacity='0.6'/%3E%3Cpath d='M612.074 298.558C614.743 298.187 616.591 295.617 616.202 292.817L609.868 247.186C609.48 244.386 607.001 242.416 604.332 242.786C601.664 243.157 599.815 245.727 600.204 248.527L605.834 289.088L567.178 294.454C564.509 294.824 562.661 297.395 563.05 300.195C563.438 302.995 565.917 304.965 568.585 304.594L612.074 298.558ZM455.081 175.663L608.451 297.547L614.289 289.428L460.919 167.544L455.081 175.663Z' fill='%232A2CA8' fill-opacity='0.6'/%3E%3Cpath d='M320.464 396.954C322.417 398.906 325.583 398.906 327.536 396.954L359.355 365.134C361.308 363.181 361.308 360.015 359.355 358.063C357.403 356.11 354.237 356.11 352.284 358.063L324 386.347L295.716 358.063C293.763 356.11 290.597 356.11 288.645 358.063C286.692 360.015 286.692 363.181 288.645 365.134L320.464 396.954ZM319 331.395L319 393.418L329 393.418L329 331.395L319 331.395Z' fill='%232A2CA8' fill-opacity='0.6'/%3E%3C/svg%3E");
+          background-size: 637px;
+          background-repeat: no-repeat;
+          background-position: center 50px;
+          pointer-events: none;
+        }
+        .grid-col {
+          .trophy-img {
+            width: 100%;
+            max-width: 158px;
+            margin: 50px auto 65px;
+          }
+          .trophy-text {
+            @include title_style_2($black);
+          }
+          .page-data {
+            display: block;
+            width: 100%;
+            max-width: 186px;
+            background-color: $white;
+            border: 1px solid #000000;
+            box-shadow: 2.7px 1.8px 1.8px rgba(0, 0, 0, 0.25);
+            border-radius: 4.5px;
+            transition: all 0.5s;
+            &:hover {
+              transform: scale(1.2);
+              box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.25);
+            }
+            .page-title {
+              font-weight: $Regular;
+              padding: 0 15px;
+            }
+          }
+          .spaces {
+            height: 190px;
+          }
+          .page-data.data2 {
+            margin-left: 25px;
+          }
+          .page-data.data3 {
+            margin: 120px auto 0;
+          }
+          .page-data.data4 {
+            margin-left: auto;
+          }
+          .page-data.data5 {
+            margin-left: auto;
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // Section 7 ( Works )
+  .section7 {
+    text-align: center;
+    padding: 35px 0;
+    .title {
+      @include title_style_1($black);
+      margin-bottom: 40px;
+    }
+    .works-data-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 50px;
+      .data {
+        .img {
+          height: 100%;
+          max-height: 290px;
+          width: 100%;
+          margin-bottom: 50px;
+        }
+        .text {
+          max-width: 310px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  // Section 8 ( Education )
+  .section8 {
+    .contact-part {
+      .title {
+        @include title_style_1($white);
+      }
+      .text {
+        color: #fff;
+      }
+      .linkes {
+        margin-top: 20px;
+        a.link_style_1 {
+          &:first-child {
+            margin-right: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  // Section 9 ( CTA )
+  .cta-section {
+    padding: 90px 0;
+    .site-container {
+      text-align: center;
+      .title {
+        @include title_style_2($black);
+        max-width: 860px;
+        margin: 0 auto 50px;
+      }
+      .link_style_1 {
+        margin-top: 25px;
+        color: #2a2ca8;
+      }
+    }
+  }
+
+  // Section 10 - 11 - 12 ( Participants, Partner, Endorsed )
+  .logo-slider-section {
+    padding: 80px 0;
+    text-align: center;
+    .title {
+      @include title_style_1(#252733);
+    }
+    .logo-list {
+      margin-top: 30px;
+      .slick-track {
+        // display: flex;
+        // align-items: center;
+        a {
+          margin: 0 30px;
+          .img {
+            height: -webkit-fill-available;
+            height: 118px;
+            object-fit: scale-down;
+          }
+          .brand-name {
+            margin-top: 10px;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 1;
+            // -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}

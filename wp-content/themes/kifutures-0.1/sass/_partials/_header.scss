@@ -1,0 +1,89 @@
+// Site Header
+.kifutures {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: $white;
+    .site-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      .site-branding {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px 0;
+      }
+      .main-navigation {
+        padding-left: 30px;
+        button.menu-toggle {
+          display: none;
+          @include mq-small {
+            display: block;
+          }
+        }
+        .nav-menu {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          .link {
+            position: relative;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: 0 25px;
+            a {
+              padding: 20px 0;
+              font-weight: $SemiBold;
+              &:hover {
+                color: $link-hover-color;
+                text-decoration: underline;
+              }
+              &:active {
+                text-decoration: none;
+              }
+            }
+            &:hover {
+              .sub-menu {
+                display: block;
+              }
+            }
+            .sub-menu {
+              position: absolute;
+              width: 200%;
+              top: 100%;
+              background: $white;
+              display: none;
+              .menu-item {
+                padding: 10px 5px;
+                margin: 0px;
+              }
+            }
+          }
+          .menu-item-has-children {
+            & > a {
+              padding-right: 25px;
+              &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 25px;
+                background-image: url("data:image/svg+xml,%3Csvg width='13' height='6' viewBox='0 0 13 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.81836 1L6.69109 5L11.5638 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                width: 13px;
+                height: 6px;
+                transform: translate(0px, 5px);
+              }
+            }
+          }
+          .btn-sm {
+            a {
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}

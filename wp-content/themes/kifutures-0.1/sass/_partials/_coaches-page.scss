@@ -1,0 +1,163 @@
+// Home Page Scss
+.page-template-coaches-page.kifutures {
+  // Hero Section 1
+  .hero-section {
+    padding: 40px 0 400px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    .title {
+      @include title_style_2($headline-color);
+    }
+  }
+
+  // Coaches List
+  .coches {
+    padding: 40px 0 50px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    .coach-form {
+      max-width: 640px;
+      margin: 0 auto 40px;
+      .form-title {
+        @include title_style_1($body-color);
+      }
+      .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+        input,
+        select {
+          width: 100%;
+          padding: 0 10px;
+          height: 50px;
+          border: 1px solid $black;
+          border-radius: 4px;
+          outline: none;
+          &:focus {
+            border-color: gray;
+          }
+        }
+        .select2-container {
+          .selection {
+            .select2-selection.select2-selection--single {
+              width: 100%;
+              height: 50px;
+              padding: 0 10px;
+              border: 1px solid $black;
+              display: flex;
+              align-items: center;
+              &:focus {
+                border-color: #808080;
+              }
+              .select2-selection__rendered {
+                text-align: left;
+                padding: 0 10px 0 0;
+              }
+              .select2-selection__arrow {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+      .select-fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 15px;
+      }
+      .form-error {
+        margin-top: 40px;
+      }
+    }
+    .coches-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 50px;
+      // Coache Card Design
+      .coche {
+        background: $white;
+        border: 6px solid #e6e8ff;
+        box-shadow: 7px 9px 0px 2px #e6e8ff;
+        border-radius: 20px;
+        padding: 30px 15px;
+        display: flex;
+        flex-direction: column;
+        &-image {
+          height: 166px;
+          width: 166px;
+          background-position: center;
+          background-size: cover;
+          margin: 0 auto;
+          border: 7px solid #e6e8ff;
+          border-radius: 100px;
+        }
+        &-title {
+          font-weight: $Medium;
+          font-size: $fs-20;
+          line-height: 30px;
+          color: #252733;
+        }
+        &-pronouns {
+          font-family: $font-tertiary;
+          font-size: $fs-14;
+          line-height: 21px;
+          font-weight: $Regular;
+          color: #646772;
+        }
+        &-location,
+        &-language {
+          font-family: $font-tertiary;
+          font-weight: $Regular;
+          font-size: $fs-16;
+          line-height: 27px;
+          color: #646772;
+          margin-top: 10px;
+        }
+        &-language {
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        &-Specialities {
+          margin-bottom: 20px;
+          .coche-tag {
+            margin: 0 auto 5px;
+            span {
+              border-radius: 100px;
+              font-family: $font-secondary;
+              font-weight: $Regular;
+              font-size: $fs-12;
+              line-height: 18px;
+              color: $blue;
+              padding: 5px 10px;
+              margin: 2px;
+              display: inline-block;
+            }
+            &.professional-tag {
+              span {
+                background-color: #daf0ff;
+              }
+            }
+            &.sustainability-tag {
+              span {
+                background-color: #e5e4fd;
+              }
+            }
+          }
+          .more-tag {
+            font-family: $font-tertiary;
+            font-weight: $Regular;
+            font-size: $fs-14;
+            line-height: 24px;
+            color: #646772;
+            cursor: pointer;
+          }
+        }
+        .btn-md {
+          margin: auto auto 0;
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

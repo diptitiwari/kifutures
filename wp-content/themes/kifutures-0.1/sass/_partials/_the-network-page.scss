@@ -1,0 +1,39 @@
+// Home Page Scss
+.page-template-the-network-page.kifutures {
+  // Hero Section 1
+  .hero-section.hero-container {
+    padding: 90px 15px 0;
+    text-align: center;
+    .title {
+      @include title_style_1(#0e0e0e);
+    }
+    .subtitle {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
+  // Section 2 ( Participants )
+  .logo-grid-section {
+    padding: 80px 0;
+    text-align: center;
+    .title {
+      @include title_style_1(#252733);
+    }
+    .logo-list {
+      margin-top: 30px;
+      .slick-track {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        a {
+          margin: 0 30px;
+          .img {
+            height: -webkit-fill-available;
+            max-height: 118px;
+            object-fit: scale-down;
+          }
+        }
+      }
+    }
+  }
+}
